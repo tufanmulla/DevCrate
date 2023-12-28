@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .products-category-box-width {
+    width: 37.25rem;
+  }
+}
