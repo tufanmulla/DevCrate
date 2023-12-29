@@ -54,8 +54,8 @@
   <body>
     <!-- Header Are Starts Are Here -->
     <header>
-      <div class="px-7 grid grid-cols-12 justify-center items-center">
-        <div class="flex col-span-2 justify-start items-center">
+      <div class="grid grid-cols-12 justify-center items-center px-7">
+        <div class="flex col-start-1 col-end-3 justify-start items-center">
           <a href="">
             <img
               class="w-44 cursor-grab object-cover"
@@ -66,30 +66,44 @@
         </div>
 
         <!-- Navigation Bar Are Starts Here -->
-        <nav class="h-full col-span-6">
-          <ul class="h-full flex gap-8 justify-center items-center text-lg">
+        <nav
+          id="navigationBar"
+          class="h-full col-start-3 col-end-9"
+        >
+          <ul class="h-full flex gap-10 justify-center items-center text-lg">
             <li
-              class="h-full flex justify-center items-center group relative font-medium text-base text-gray-600 cursor-pointer h-"
+              class="h-full flex gap-2 justify-center items-center group relative font-medium text-base text-gray-600 cursor-pointer h-"
             >
               Products
+              <img
+                class="group-hover:rotate-180 duration-300"
+                src="./assets/images/headerImage/arrow.png"
+                alt="Arrow"
+              />
               <div
-                class="hidden group-hover:flex absolute justify-between bg-white products-category-box-width -left-60 top-20 p-10 rounded-md shadow-md border z-30 cursor-default"
+                class="flex origin-top scale-0 duration-0 group-hover:scale-100 group-hover:duration-75 absolute justify-between bg-white products-category-box-width -left-60 top-20 p-10 rounded-md shadow-md border z-30 cursor-default"
               >
                 <div>
                   <strong class="block mb-3 text-black"
                     >Product Offerings</strong
                   >
                   <ul class="flex flex-col gap-2">
-                    <li class="cursor-pointer font-normal">
+                    <li class="cursor-pointer font-normal hover:underline">
                       DevCrate Personal
                     </li>
-                    <li class="cursor-pointer font-normal">DevCrate Pro</li>
-                    <li class="cursor-pointer font-normal">DevCrate Team</li>
-                    <li class="cursor-pointer font-normal">
+                    <li class="cursor-pointer font-normal hover:underline">
+                      DevCrate Pro
+                    </li>
+                    <li class="cursor-pointer font-normal hover:underline">
+                      DevCrate Team
+                    </li>
+                    <li class="cursor-pointer font-normal hover:underline">
                       DevCrate Business
                     </li>
-                    <li class="cursor-pointer font-normal">DevCrate Scout</li>
-                    <li class="cursor-pointer font-normal">
+                    <li class="cursor-pointer font-normal hover:underline">
+                      DevCrate Scout
+                    </li>
+                    <li class="cursor-pointer font-normal hover:underline">
                       Desktop VS DevCrate Engine
                     </li>
                   </ul>
@@ -97,48 +111,81 @@
                 <div>
                   <strong class="block mb-3 text-black">Features</strong>
                   <ul class="flex flex-col gap-2">
-                    <li class="cursor-pointer font-normal">
+                    <li class="cursor-pointer font-normal hover:underline">
                       Secure Software Supply Chain
                     </li>
-                    <li class="cursor-pointer font-normal">
+                    <li class="cursor-pointer font-normal hover:underline">
                       Container Runtime
                     </li>
-                    <li class="cursor-pointer font-normal">Developer Tools</li>
-                    <li class="cursor-pointer font-normal">
+                    <li class="cursor-pointer font-normal hover:underline">
+                      Developer Tools
+                    </li>
+                    <li class="cursor-pointer font-normal hover:underline">
                       Trusted Open Source Content
                     </li>
-                    <li class="cursor-pointer font-normal">
+                    <li class="cursor-pointer font-normal hover:underline">
                       Accelerated AI/ML
                     </li>
-                    <li class="cursor-pointer font-normal">CLI</li>
-                    <li class="cursor-pointer font-normal">IDE Extensions</li>
-                    <li class="cursor-pointer font-normal">DevCrate Desktop</li>
-                    <li class="cursor-pointer font-normal">DevCrate Hub</li>
-                    <li class="cursor-pointer font-normal">Extensions</li>
-                    <li class="cursor-pointer font-normal">
+                    <li class="cursor-pointer font-normal hover:underline">
+                      CLI
+                    </li>
+                    <li class="cursor-pointer font-normal hover:underline">
+                      IDE Extensions
+                    </li>
+                    <li class="cursor-pointer font-normal hover:underline">
+                      DevCrate Desktop
+                    </li>
+                    <li class="cursor-pointer font-normal hover:underline">
+                      DevCrate Hub
+                    </li>
+                    <li class="cursor-pointer font-normal hover:underline">
+                      Extensions
+                    </li>
+                    <li class="cursor-pointer font-normal hover:underline">
                       DevCrate Product Roadmap
                     </li>
-                    <li class="cursor-pointer font-normal">Support</li>
+                    <li class="cursor-pointer font-normal hover:underline">
+                      Support
+                    </li>
                   </ul>
                 </div>
               </div>
             </li>
             <li
-              class="h-full flex justify-center items-center group relative font-medium text-base text-gray-600 cursor-pointer"
+              class="h-full flex gap-2 justify-center items-center group relative font-medium text-base text-gray-600 cursor-pointer"
             >
               Developers
+              <img
+                class="group-hover:rotate-180 duration-300"
+                src="./assets/images/headerImage/arrow.png"
+                alt="Arrow"
+              />
               <div
-                class="hidden group-hover:flex absolute flex-col gap-2 w-60 -left-20 top-20 p-10 rounded-md shadow-md border bg-white z-30 cursor-default"
+                class="flex origin-top scale-0 duration-0 group-hover:scale-100 group-hover:duration-75 absolute flex-col gap-2 w-60 -left-20 top-20 p-10 rounded-md shadow-md border bg-white z-30 cursor-default"
               >
                 <strong class="text-black">Developers</strong>
                 <ul class="flex flex-col gap-2">
-                  <li class="cursor-pointer font-normal">Docs</li>
-                  <li class="cursor-pointer font-normal">Getting Started</li>
-                  <li class="cursor-pointer font-normal">Trainings</li>
-                  <li class="cursor-pointer font-normal">Extensions SDK</li>
-                  <li class="cursor-pointer font-normal">Community</li>
-                  <li class="cursor-pointer font-normal">Open Source</li>
-                  <li class="cursor-pointer font-normal">Preview Program</li>
+                  <li class="cursor-pointer font-normal hover:underline">
+                    Docs
+                  </li>
+                  <li class="cursor-pointer font-normal hover:underline">
+                    Getting Started
+                  </li>
+                  <li class="cursor-pointer font-normal hover:underline">
+                    Trainings
+                  </li>
+                  <li class="cursor-pointer font-normal hover:underline">
+                    Extensions SDK
+                  </li>
+                  <li class="cursor-pointer font-normal hover:underline">
+                    Community
+                  </li>
+                  <li class="cursor-pointer font-normal hover:underline">
+                    Open Source
+                  </li>
+                  <li class="cursor-pointer font-normal hover:underline">
+                    Preview Programs
+                  </li>
                 </ul>
               </div>
             </li>
@@ -153,22 +200,37 @@
               Blog
             </li>
             <li
-              class="h-full flex justify-center items-center group relative font-medium text-base text-gray-600 cursor-pointer"
+              class="h-full flex gap-2 justify-center items-center group relative font-medium text-base text-gray-600 cursor-pointer"
             >
               About Us
+              <img
+                class="group-hover:rotate-180 duration-300"
+                src="./assets/images/headerImage/arrow.png"
+                alt="Arrow"
+              />
               <div
                 class="hidden group-hover:flex absolute flex-col gap-2 w-60 -left-20 top-20 p-10 rounded-md shadow-md border bg-white z-30 cursor-default"
               >
                 <strong class="text-black"> About Us</strong>
                 <ul class="flex flex-col gap-2">
-                  <li class="cursor-pointer font-normal">Our Company</li>
-                  <li class="cursor-pointer font-normal">Trust</li>
-                  <li class="cursor-pointer font-normal">
+                  <li class="cursor-pointer font-normal hover:underline">
+                    Our Company
+                  </li>
+                  <li class="cursor-pointer font-normal hover:underline">
+                    Trust
+                  </li>
+                  <li class="cursor-pointer font-normal hover:underline">
                     What is a Container?
                   </li>
-                  <li class="cursor-pointer font-normal">Why DevCrate</li>
-                  <li class="cursor-pointer font-normal">Swag Store</li>
-                  <li class="cursor-pointer font-normal">Careers</li>
+                  <li class="cursor-pointer font-normal hover:underline">
+                    Why DevCrate
+                  </li>
+                  <li class="cursor-pointer font-normal hover:underline">
+                    Swag Store
+                  </li>
+                  <li class="cursor-pointer font-normal hover:underline">
+                    Careers
+                  </li>
                 </ul>
               </div>
             </li>
@@ -181,10 +243,13 @@
         </nav>
         <!-- Navigation Bar Are Ends Here -->
 
-        <div class="col-span-4 flex gap-3 justify-end items-center">
+        <div
+          class="col-start-9 col-end-13 flex gap-3 justify-end items-center"
+          id="headerPart3"
+        >
           <form class="flex justify-center items-center gap-2">
             <input
-              class="border bg-slate-500 hidden"
+              class="w-[330px] outline-none border px-3 py-2 shadow-sm rounded-md text-gray-600 z-20 hidden"
               title="Search"
               type="search"
               id="search"
@@ -192,7 +257,8 @@
               required
             />
             <img
-              class="w-5 cursor-pointer object-cover"
+              class="w-4 cursor-pointer object-cover"
+              id="searchIcon"
               src="./assets//images/headerImage/siteSearchIcon.webp"
               alt="Search Icon"
             />
@@ -206,7 +272,7 @@
           </div>
           <div>
             <button
-              class="focus:outline-none bg-[#2A446B] hover:bg-[#507ec4] duration-500 text-white text-center text-lg border rounded-md px-5 py-2 font-semibold"
+              class="focus:outline-none bg-[#507ec4] hover:bg-[#2A446B] duration-500 text-white text-center text-lg border rounded-md px-5 py-2 font-semibold"
               title="Get Started"
             >
               Get Started
@@ -216,5 +282,9 @@
       </div>
     </header>
     <!-- Header Are Ends Are Here -->
+
+    <!-- Link Js Are Starts -->
+    <script src="./js/header.js"></script>
+    <!-- Link Js Are Ends-->
   </body>
 </html>

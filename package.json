@@ -1,15 +1,21 @@
 {
   "name": "devcrate",
   "version": "1.0.0",
-  "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/tailwind.css -o ./output/tailwind.css -w"
+    "build": "tailwindcss -i ./src/tailwind.css -o ./output/tailwind.css -w",
+    "build-p": "postcss ./src/tailwind.css -o ./output/tailwind.css -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.0"
+  },
+  "description": "",
+  "dependencies": {
+    "postcss-cli": "^11.0.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32"
   }
 }
