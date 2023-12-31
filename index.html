@@ -51,28 +51,22 @@
 
     <title>DevCrate</title>
   </head>
-  <body>
-    <!-- Header Are Starts Are Here -->
+  <body class="dark dark:bg-black">
+    <!-- Header Starts Are Here -->
     <header>
-      <div class="grid grid-cols-12 justify-center items-center px-7">
+      <div class="grid grid-cols-12 justify-center items-center px-7 py-5">
         <div class="flex col-start-1 col-end-3 justify-start items-center">
           <a href="">
-            <img
-              class="w-44 cursor-grab object-cover"
-              src="./assets/images//headerImage/logo/DevCrateLightModeLogo.webp"
-              alt="Dev Crate Logo"
-            />
+            <strong class="text-[#507ec4] text-3xl">&lt;&#47;&gt;</strong>
+            <span class="text-[#507ec4] text-3xl">DevCrate</span>
           </a>
         </div>
 
         <!-- Navigation Bar Are Starts Here -->
-        <nav
-          id="navigationBar"
-          class="h-full col-start-3 col-end-9"
-        >
+        <nav id="navigationBar" class="h-full col-start-3 col-end-9">
           <ul class="h-full flex gap-10 justify-center items-center text-lg">
             <li
-              class="h-full flex gap-2 justify-center items-center group relative font-medium text-base text-gray-600 cursor-pointer h-"
+              class="h-full flex gap-2 justify-center items-center group relative font-medium text-base text-gray-600 cursor-pointer dark:text-white"
             >
               Products
               <img
@@ -81,10 +75,10 @@
                 alt="Arrow"
               />
               <div
-                class="flex origin-top scale-0 duration-0 group-hover:scale-100 group-hover:duration-75 absolute justify-between bg-white products-category-box-width -left-60 top-20 p-10 rounded-md shadow-md border z-30 cursor-default"
+                class="flex origin-top scale-0 duration-0 group-hover:scale-100 group-hover:duration-75 absolute justify-between bg-white products-category-box-width -left-60 top-12 p-10 rounded-md shadow-md border z-30 cursor-default dark:bg-black"
               >
                 <div>
-                  <strong class="block mb-3 text-black"
+                  <strong class="block mb-3 text-black dark:text-white"
                     >Product Offerings</strong
                   >
                   <ul class="flex flex-col gap-2">
@@ -109,7 +103,9 @@
                   </ul>
                 </div>
                 <div>
-                  <strong class="block mb-3 text-black">Features</strong>
+                  <strong class="block mb-3 text-black dark:text-white"
+                    >Features</strong
+                  >
                   <ul class="flex flex-col gap-2">
                     <li class="cursor-pointer font-normal hover:underline">
                       Secure Software Supply Chain
@@ -152,7 +148,7 @@
               </div>
             </li>
             <li
-              class="h-full flex gap-2 justify-center items-center group relative font-medium text-base text-gray-600 cursor-pointer"
+              class="h-full flex gap-2 justify-center items-center group relative font-medium text-base text-gray-600 cursor-pointer dark:text-white"
             >
               Developers
               <img
@@ -161,9 +157,9 @@
                 alt="Arrow"
               />
               <div
-                class="flex origin-top scale-0 duration-0 group-hover:scale-100 group-hover:duration-75 absolute flex-col gap-2 w-60 -left-20 top-20 p-10 rounded-md shadow-md border bg-white z-30 cursor-default"
+                class="flex origin-top scale-0 duration-0 group-hover:scale-100 group-hover:duration-75 absolute flex-col gap-2 w-60 -left-20 top-12 p-10 rounded-md shadow-md border bg-white z-30 cursor-default dark:bg-black"
               >
-                <strong class="text-black">Developers</strong>
+                <strong class="text-black dark:text-white">Developers</strong>
                 <ul class="flex flex-col gap-2">
                   <li class="cursor-pointer font-normal hover:underline">
                     Docs
@@ -190,17 +186,17 @@
               </div>
             </li>
             <li
-              class="relative font-medium text-base text-gray-600 cursor-pointer hover:underline"
+              class="relative font-medium text-base text-gray-600 cursor-pointer hover:underline dark:text-white"
             >
               Pricing
             </li>
             <li
-              class="relative font-medium text-base text-gray-600 cursor-pointer hover:underline"
+              class="relative font-medium text-base text-gray-600 cursor-pointer hover:underline dark:text-white"
             >
               Blog
             </li>
             <li
-              class="h-full flex gap-2 justify-center items-center group relative font-medium text-base text-gray-600 cursor-pointer"
+              class="h-full flex gap-2 justify-center items-center group relative font-medium text-base text-gray-600 cursor-pointer dark:text-white"
             >
               About Us
               <img
@@ -209,9 +205,9 @@
                 alt="Arrow"
               />
               <div
-                class="hidden group-hover:flex absolute flex-col gap-2 w-60 -left-20 top-20 p-10 rounded-md shadow-md border bg-white z-30 cursor-default"
+                class="flex origin-top scale-0 duration-0 group-hover:scale-100 group-hover:duration-75 absolute flex-col gap-2 w-60 -left-20 top-12 p-10 rounded-md shadow-md border bg-white z-30 cursor-default dark:bg-black"
               >
-                <strong class="text-black"> About Us</strong>
+                <strong class="text-black dark:text-white"> About Us</strong>
                 <ul class="flex flex-col gap-2">
                   <li class="cursor-pointer font-normal hover:underline">
                     Our Company
@@ -235,7 +231,7 @@
               </div>
             </li>
             <li
-              class="relative font-medium text-base text-gray-600 cursor-pointer hover:underline"
+              class="relative font-medium text-base text-gray-600 cursor-pointer hover:underline dark:text-white"
             >
               Partners
             </li>
@@ -247,14 +243,18 @@
           class="col-start-9 col-end-13 flex gap-3 justify-end items-center"
           id="headerPart3"
         >
-          <form class="flex justify-center items-center gap-2">
+          <form
+            onsubmit="event.preventDefault()"
+            class="flex justify-center items-center gap-2"
+          >
             <input
-              class="w-[330px] outline-none border px-3 py-2 shadow-sm rounded-md text-gray-600 z-20 hidden"
+              class="w-[330px] bg-[#f9f9f9] border outline-none px-3 py-2 shadow-md rounded-md text-gray-600 z-20 dark:bg-[#c0c0c0] dark:border-[#507ec4] hidden"
               title="Search"
               type="search"
               id="search"
               name="search"
               required
+              autofocus
             />
             <img
               class="w-4 cursor-pointer object-cover"
@@ -264,7 +264,7 @@
             />
           </form>
           <div
-            class="w-28 border-2 text-center px-5 py-2 rounded-md bg-[#ffffff] hover:bg-[#f5f5f5] hover:border-none cursor-pointer duration-500"
+            class="w-28 text-center px-5 py-2 rounded-md bg-[#f5f5f5] hover:bg-[#c0c0c0] border-none cursor-pointer duration-500 dark:bg-[#c0c0c0] dark:hover:bg-[#f5f5f5]"
           >
             <a class="text-lg font-semibold" title="Go to SignIn page" href=""
               >Sign In</a
@@ -272,7 +272,7 @@
           </div>
           <div>
             <button
-              class="focus:outline-none bg-[#507ec4] hover:bg-[#2A446B] duration-500 text-white text-center text-lg border rounded-md px-5 py-2 font-semibold"
+              class="focus:outline-none bg-[#507ec4] hover:bg-[#2A446B] duration-500 text-white text-center text-lg border rounded-md px-5 py-2 font-semibold border-none"
               title="Get Started"
             >
               Get Started
@@ -281,7 +281,7 @@
         </div>
       </div>
     </header>
-    <!-- Header Are Ends Are Here -->
+    <!-- Header Ends Are Here -->
 
     <!-- Link Js Are Starts -->
     <script src="./js/header.js"></script>

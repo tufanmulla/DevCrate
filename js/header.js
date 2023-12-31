@@ -11,11 +11,6 @@ searchIcon.addEventListener("click", (event) => {
     navigationBar.classList.add("hidden");
     headerPart3.classList.remove("col-start-9");
     headerPart3.classList.add("col-start-6");
-  } else {
-    search.classList.add("hidden");
-    navigationBar.classList.remove("hidden");
-    headerPart3.classList.remove("col-start-6");
-    headerPart3.classList.add("col-start-9");
   }
 });
 
@@ -28,7 +23,7 @@ document.addEventListener("click", (event) => {
   ) {
     search.classList.add("hidden");
     navigationBar.classList.remove("hidden");
-    headerPart3.classList.add("col-start-9");
     headerPart3.classList.remove("col-start-6");
+    headerPart3.classList.add("col-start-9");
   }
 });
