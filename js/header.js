@@ -8,6 +8,7 @@ searchIcon.addEventListener("click", (event) => {
   event.stopPropagation();
   if (search.classList.contains("hidden")) {
     search.classList.remove("hidden");
+    search.focus();
     navigationBar.classList.add("hidden");
     headerPart3.classList.remove("col-start-9");
     headerPart3.classList.add("col-start-6");

@@ -51,7 +51,7 @@
 
     <title>DevCrate</title>
   </head>
-  <body class="dark dark:bg-black">
+  <body class="bg-gray-200 dark dark:bg-gray-900">
     <!-- Header Starts Are Here -->
     <header>
       <div class="grid grid-cols-12 justify-center items-center px-7 py-5">
@@ -66,7 +66,7 @@
         <nav id="navigationBar" class="h-full col-start-3 col-end-9">
           <ul class="h-full flex gap-10 justify-center items-center text-lg">
             <li
-              class="h-full flex gap-2 justify-center items-center group relative font-medium text-base text-gray-600 cursor-pointer dark:text-white"
+              class="h-full flex gap-2 justify-center items-center group relative font-medium text-base text-gray-600 cursor-pointer dark:text-gray-300"
             >
               Products
               <img
@@ -75,10 +75,10 @@
                 alt="Arrow"
               />
               <div
-                class="flex origin-top scale-0 duration-0 group-hover:scale-100 group-hover:duration-75 absolute justify-between bg-white products-category-box-width -left-60 top-12 p-10 rounded-md shadow-md border z-30 cursor-default dark:bg-black"
+                class="flex origin-top scale-0 duration-0 group-hover:scale-100 group-hover:duration-75 absolute justify-between bg-gray-100 products-category-box-width -left-60 top-12 p-10 rounded-md shadow-md border-none z-30 cursor-default dark:bg-gray-700"
               >
                 <div>
-                  <strong class="block mb-3 text-black dark:text-white"
+                  <strong class="block mb-3 text-black dark:text-gray-300"
                     >Product Offerings</strong
                   >
                   <ul class="flex flex-col gap-2">
@@ -103,7 +103,7 @@
                   </ul>
                 </div>
                 <div>
-                  <strong class="block mb-3 text-black dark:text-white"
+                  <strong class="block mb-3 text-black dark:text-gray-300"
                     >Features</strong
                   >
                   <ul class="flex flex-col gap-2">
@@ -148,7 +148,7 @@
               </div>
             </li>
             <li
-              class="h-full flex gap-2 justify-center items-center group relative font-medium text-base text-gray-600 cursor-pointer dark:text-white"
+              class="h-full flex gap-2 justify-center items-center group relative font-medium text-base text-gray-600 cursor-pointer dark:text-gray-300 antialiased hover:subpixel-antialiased"
             >
               Developers
               <img
@@ -157,9 +157,11 @@
                 alt="Arrow"
               />
               <div
-                class="flex origin-top scale-0 duration-0 group-hover:scale-100 group-hover:duration-75 absolute flex-col gap-2 w-60 -left-20 top-12 p-10 rounded-md shadow-md border bg-white z-30 cursor-default dark:bg-black"
+                class="flex origin-top scale-0 duration-0 group-hover:scale-100 group-hover:duration-75 absolute flex-col gap-2 w-60 -left-20 top-12 p-10 rounded-md shadow-md border-none bg-gray-100 z-30 cursor-default dark:bg-gray-700"
               >
-                <strong class="text-black dark:text-white">Developers</strong>
+                <strong class="text-black dark:text-gray-300"
+                  >Developers</strong
+                >
                 <ul class="flex flex-col gap-2">
                   <li class="cursor-pointer font-normal hover:underline">
                     Docs
@@ -186,17 +188,17 @@
               </div>
             </li>
             <li
-              class="relative font-medium text-base text-gray-600 cursor-pointer hover:underline dark:text-white"
+              class="relative font-medium text-base text-gray-600 cursor-pointer hover:underline dark:text-gray-300"
             >
               Pricing
             </li>
             <li
-              class="relative font-medium text-base text-gray-600 cursor-pointer hover:underline dark:text-white"
+              class="relative font-medium text-base text-gray-600 cursor-pointer hover:underline dark:text-gray-300"
             >
               Blog
             </li>
             <li
-              class="h-full flex gap-2 justify-center items-center group relative font-medium text-base text-gray-600 cursor-pointer dark:text-white"
+              class="h-full flex gap-2 justify-center items-center group relative font-medium text-base text-gray-600 cursor-pointer dark:text-gray-300"
             >
               About Us
               <img
@@ -205,9 +207,9 @@
                 alt="Arrow"
               />
               <div
-                class="flex origin-top scale-0 duration-0 group-hover:scale-100 group-hover:duration-75 absolute flex-col gap-2 w-60 -left-20 top-12 p-10 rounded-md shadow-md border bg-white z-30 cursor-default dark:bg-black"
+                class="flex origin-top scale-0 duration-0 group-hover:scale-100 group-hover:duration-75 absolute flex-col gap-2 w-60 -left-20 top-12 p-10 rounded-md shadow-md border-none bg-gray-100 z-30 cursor-default dark:bg-gray-700"
               >
-                <strong class="text-black dark:text-white"> About Us</strong>
+                <strong class="text-black dark:text-gray-300"> About Us</strong>
                 <ul class="flex flex-col gap-2">
                   <li class="cursor-pointer font-normal hover:underline">
                     Our Company
@@ -231,7 +233,7 @@
               </div>
             </li>
             <li
-              class="relative font-medium text-base text-gray-600 cursor-pointer hover:underline dark:text-white"
+              class="relative font-medium text-base text-gray-600 cursor-pointer hover:underline dark:text-gray-300"
             >
               Partners
             </li>
@@ -248,7 +250,7 @@
             class="flex justify-center items-center gap-2"
           >
             <input
-              class="w-[330px] bg-[#f9f9f9] border outline-none px-3 py-2 shadow-md rounded-md text-gray-600 z-20 dark:bg-[#c0c0c0] dark:border-[#507ec4] hidden"
+              class="w-[330px] bg-[#f9f9f9] border outline-none px-3 py-2 shadow-md rounded-md text-gray-600 z-20 dark:bg-[#c0c0c0] dark:focus:bg-white dark:border-[#507ec4] hidden"
               title="Search"
               type="search"
               id="search"
@@ -272,7 +274,7 @@
           </div>
           <div>
             <button
-              class="focus:outline-none bg-[#507ec4] hover:bg-[#2A446B] duration-500 text-white text-center text-lg border rounded-md px-5 py-2 font-semibold border-none"
+              class="focus:outline-none bg-[#507ec4] duration-500 hover:bg-[#2A446B] text-white text-center text-lg border rounded-md px-5 py-2 font-semibold border-none"
               title="Get Started"
             >
               Get Started
@@ -286,13 +288,34 @@
     <!-- Main Starts Are Here -->
     <main>
       <!-- Section One Starts Are Here -->
-      <section>
-        <article>
-          <h1>Develop robust and secure software from inception</h1>
-          <span>Introducing the general availability of DevCrate Scout.</span>
+      <section
+        class="grid grid-cols-1 justify-center items-center pt-10 gap-14"
+      >
+        <article
+          class="w-[95%] flex flex-col justify-self-center justify-center items-center gap-14"
+        >
+          <h1
+            class="text-transparent bg-clip-text bg-gradient-to-r from-[#2A446B] to-[#507ec4] text-8xl font-bold text-center leading-[110px] dark:text-white dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#2A446B] dark:to-[red]"
+          >
+            Develop robust and secure software from inception
+          </h1>
+          <span class="text-[26px] font-light text-gray-600 dark:text-gray-300"
+            >Introducing the general availability of
+            <span
+              class="underline decoration-wavy decoration-[#507ec4] dark:decoration-[red]"
+              >DevCrate</span
+            >
+            Scout.</span
+          >
         </article>
-        <button>Explore DevCrate Scout</button>
-        <div>img</div>
+        <button
+          class="justify-self-center bg-gradient-to-r duration-500 from-[#2A446B] to-[#507ec4] border-none outline-none text-xl text-gray-200 font-bold tracking-wide px-7 py-3 rounded-md shadow-xl shadow-[#507ec4]/50 cursor-pointer hover:bg-grdadient-to-r hover:from-[#507ec4] hover:to-[#2A446B] dark:bg-gradient-to-r dark:from-[red] dark:to-[#2A446B] dark:hover:from-[#2A446B] dark:hover:to-[red]"
+        >
+          Explore DevCrate Scout
+        </button>
+        <div class="flex flex-col justify-cneter items-center">
+          <div>X</div>
+        </div>
       </section>
       <!-- Section One Ends Are Here -->
     </main>
