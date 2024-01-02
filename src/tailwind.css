@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .category-box-direction {
+    @apply before:absolute before:content-[''] before:border-r-[28px] before:border-b-[28px] before:border-r-[transparent] before:border-b-gray-100 before:rotate-[135deg] before:top-[-7px] before:left-[50%] before:translate-x-[-50%] dark:before:border-b-gray-700;
+  }
+}
+
 @layer utilities {
   .products-category-box-width {
     width: 37.25rem;
+  }
+  .scoutBoxShadow {
+    box-shadow: 0 0 120px 15px #507ec4;
+  }
+  .darkScoutBoxShadow {
+    box-shadow: 0 0 180px -40px red;
   }
 }
