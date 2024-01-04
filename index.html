@@ -51,9 +51,9 @@
 
     <title>DevCrate</title>
   </head>
-  <body class="bg-gray-200 dark dark:bg-gray-900">
+  <body class="dark">
     <!-- Header Starts Are Here -->
-    <header>
+    <header class="bg-gray-200 dark:bg-gray-800">
       <div class="grid grid-cols-12 justify-center items-center px-7 py-5">
         <div class="flex col-start-1 col-end-3 justify-start items-center">
           <a href="">
@@ -288,16 +288,17 @@
     <!-- Main Starts Are Here -->
     <main>
       <!-- Section One Starts Are Here -->
+
       <section
-        class="grid grid-cols-1 justify-center items-center pt-10 gap-14 overflow-hidden"
+        class="grid grid-cols-1 justify-center items-center pt-10 gap-14 bg-gray-200 dark:bg-gray-800 overflow-hidden"
       >
         <article
-          class="w-[95%] flex flex-col justify-self-center justify-center items-center gap-14"
+          class="w-[90%] flex flex-col justify-self-center justify-center items-center gap-14"
         >
           <h1
-            class="text-transparent bg-clip-text bg-gradient-to-r from-[#2A446B] to-[#507ec4] text-8xl font-bold text-center leading-[110px] dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#2A446B] dark:to-[red]"
+            class="text-transparent bg-clip-text bg-gradient-to-r from-[#2A446B] to-[#507ec4] text-7xl font-extrabold text-center leading-[80px] dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#2A446B] dark:to-[red]"
           >
-            Develop robust and secure software from inception
+            Develop Robust And Secure Software From Inception
           </h1>
           <span class="text-[26px] font-light text-gray-600 dark:text-gray-300"
             >Introducing the general availability of
@@ -317,7 +318,7 @@
         <!-- DevCrate Scout Div Starts Are Here -->
         <div class="flex flex-col justify-cneter items-center">
           <div
-            class="w-[550px] h-[550px] flex flex-col justify-center items-center scoutBoxShadow rounded-[18%] bg-gradient-to-r from-gray-200 to-[#2d7cf1] dark:darkScoutBoxShadow dark:from-red-600 p-2 -mb-20"
+            class="w-[550px] h-[550px] flex flex-col justify-center items-center scoutBoxShadow rounded-[18%] bg-gradient-to-r from-gray-200 to-[#2d7cf1] dark:darkScoutBoxShadow dark:from-red-600 p-2"
           >
             <div
               class="relative flex h-full w-full justify-center items-center bg-[#2A446B] dark:bg-red-900 rounded-[18%]"
@@ -348,106 +349,179 @@
 
       <!-- Section Two Starts Are Here -->
       <section
-        class="grid grid-cols-1 justify-items-center items-center bg-gray-100 pt-16"
+        class="relative grid grid-cols-1 justify-items-center items-center bg-gray-100 dark:bg-gray-700 pb-24"
       >
-        <div class="w-[80%] flex flex-col justify-center items-center">
+        <svg
+          class="absolute -top-[18.78rem]"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
+          <path
+            class="fill-gray-100 dark:fill-gray-700"
+            fill-opacity="1"
+            d="M0,128L120,160C240,192,480,256,720,234.7C960,213,1200,107,1320,53.3L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+          ></path>
+        </svg>
+        <div class="w-[80%] flex flex-col justify-center items-center gap-20">
           <article class="flex flex-col justify-center items-center gap-2">
             <h2
-              class="text-transparent bg-clip-text bg-gradient-to-r from-[#2A446B] to-[#507ec4] text-xl font-bold text-center dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#2A446B] dark:to-[red]"
+              class="text-transparent bg-clip-text bg-gradient-to-r from-[#2A446B] to-[#507ec4] text-xl font-bold text-center dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#5073c4] dark:to-[red]"
             >
               What is DevCrate
             </h2>
-            <p class="text-center text-[60px] font-extrabold leading-tight">
-              Respected by developers Preferred by Fortune 100 enterprises
+            <p
+              class="text-center text-[60px] font-extrabold leading-tight dark:text-gray-300"
+            >
+              Respected By Developers Preferred By Millions Of Companies
             </p>
-            <p class="text-center">
-              Docker offers a set of development solutions, services, reliable
+            <p
+              class="w-[90%] text-center text-base font-medium dark:text-gray-300"
+            >
+              DevCrate offers a set of development solutions, services, reliable
               resources, and automation capabilities that can be employed
               individually or in tandem, facilitating the expedited deployment
               of secure applications.
             </p>
           </article>
-          <div>
-            <div>
+          <div
+            class="flex justify-center items-center gap-5 flex-wrap colored-div relative brandBoxColors"
+          >
+            <div
+              class="flex justify-center items-center bg-gray-50 dark:bg-gray-300 w-40 h-24 p-3 rounded-2xl"
+            >
               <img
+                class="w-24 h-24 object-contain"
                 src="assets/images/sectionTwoImage/PayPal-logo.webp"
                 alt="Paypal Logo"
               />
             </div>
-            <div>
+            <div
+              class="flex justify-center items-center bg-gray-50 dark:bg-gray-300 0 w-40 h-24 p-3 rounded-2xl"
+            >
               <img
+                class="w-24 h-24 object-contain"
                 src="assets/images/sectionTwoImage/att-logo.png"
                 alt="ATT Logo"
               />
             </div>
-            <div>
+            <div
+              class="flex justify-center items-center bg-gray-50 dark:bg-gray-300 0 w-40 h-24 p-3 rounded-2xl"
+            >
               <img
+                class="w-24 h-24 object-contain"
                 src="assets/images/sectionTwoImage/arrow-logo.png"
                 alt="Arrow Logo"
               />
             </div>
-            <div>
+            <div
+              class="flex justify-center items-center bg-gray-50 dark:bg-gray-300 0 w-40 h-24 p-3 rounded-2xl"
+            >
               <img
+                class="w-24 h-24 object-contain"
                 src="assets/images/sectionTwoImage/blue-apron-logo.png"
                 alt="Blue Apron"
               />
             </div>
-            <div>
+            <div
+              class="flex justify-center items-center bg-gray-50 dark:bg-gray-300 0 w-40 h-24 p-3 rounded-2xl"
+            >
               <img
+                class="w-24 h-24 object-contain"
                 src="assets/images/sectionTwoImage/Vercel-logo.png"
                 alt="Vercel Logo"
               />
             </div>
-            <div>
+            <div
+              class="flex justify-center items-center bg-gray-50 dark:bg-gray-300 0 w-40 h-24 p-3 rounded-2xl"
+            >
               <img
+                class="w-24 h-24 object-contain"
                 src="assets/images/sectionTwoImage/stripe-logo.png"
                 alt="Stripe Logo"
               />
             </div>
-            <div>
+            <div
+              class="flex justify-center items-center bg-gray-50 dark:bg-gray-300 0 w-40 h-24 p-3 rounded-2xl"
+            >
               <img
+                class="w-24 h-24 object-contain"
                 src="assets/images/sectionTwoImage/yale-logo.png"
                 alt="Yale Logo"
               />
             </div>
-            <div>
+            <div
+              class="flex justify-center items-center bg-gray-50 dark:bg-gray-300 0 w-40 h-24 p-3 rounded-2xl"
+            >
               <img
+                class="w-24 h-24 object-contain"
                 src="assets/images/sectionTwoImage/Splunk-logo.png"
                 alt="Splunk Logo"
               />
             </div>
-            <div>
+            <div
+              class="flex justify-center items-center bg-gray-50 dark:bg-gray-300 0 w-40 h-24 p-3 rounded-2xl"
+            >
               <img
+                class="w-24 h-24 object-contain"
                 src="assets/images/sectionTwoImage/segment-logo.png"
                 alt="Segment Logo"
               />
             </div>
-            <div>
+            <div
+              class="flex justify-center items-center bg-gray-50 dark:bg-gray-300 0 w-40 h-24 p-3 rounded-2xl"
+            >
               <img
+                class="w-24 h-24 object-contain"
                 src="assets/images/sectionTwoImage/acrelec-logo.png"
                 alt="Acrelec Logo"
               />
             </div>
-            <div>
+            <div
+              class="flex justify-center items-center bg-gray-50 dark:bg-gray-300 0 w-40 h-24 p-3 rounded-2xl"
+            >
               <img
+                class="w-24 h-24 object-contain"
                 src="assets/images/sectionTwoImage/fujitsu-Logo.png"
                 alt="Fujitsu Logo"
               />
             </div>
-            <div>
+            <div
+              class="flex justify-center items-center bg-gray-50 dark:bg-gray-300 0 w-40 h-24 p-3 rounded-2xl"
+            >
               <img
+                class="w-24 h-24 object-contain"
                 src="assets/images/sectionTwoImage/Infosys-logo.png"
                 alt="Infosys Logo"
               />
             </div>
           </div>
-          <div>
-            <div>
-              <strong>25M&plus;</strong> <span>monthly developers</span>
+          <div class="w-full grid justify-between grid-cols-3">
+            <div class="flex flex-col justify-self-center items-center">
+              <strong
+                class="text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#2A446B] to-[#507ec4] dark:text-transparent dark:bg-clip-text dark:from-[#507ec4] dark:to-[red]"
+                >25M&plus;</strong
+              >
+              <span class="text-lg text-[#2A446B] font-medium dark:text-[red]"
+                >monthly developers</span
+              >
             </div>
-            <div><strong>9M&plus;</strong> <span>applications</span></div>
-            <div>
-              <strong>25B&plus;</strong> <span>monthly image pulls</span>
+            <div class="flex flex-col justify-self-center items-center">
+              <strong
+                class="text-8xl text-transparent bg-clip-text bg-gradient-to-r from-[#2A446B] to-[#507ec4] dark:text-transparent dark:bg-clip-text dark:from-[#507ec4] dark:to-[red]"
+                >9M&plus;</strong
+              >
+              <span class="text-lg text-[#2A446B] font-medium dark:text-[red]"
+                >applications</span
+              >
+            </div>
+            <div class="flex flex-col justify-self-center items-center">
+              <strong
+                class="text-8xl text-transparent bg-clip-text bg-gradient-to-r from-[#2A446B] to-[#507ec4] dark:text-transparent dark:bg-clip-text dark:from-[#507ec4] dark:to-[red]"
+                >25B&plus;</strong
+              >
+              <span class="text-lg text-[#2A446B] font-medium dark:text-[red]"
+                >monthly image pulls</span
+              >
             </div>
           </div>
         </div>

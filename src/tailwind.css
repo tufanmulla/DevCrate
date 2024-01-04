@@ -6,6 +6,10 @@
   .category-box-direction {
     @apply before:absolute before:content-[''] before:border-r-[28px] before:border-b-[28px] before:border-r-[transparent] before:border-b-gray-100 before:rotate-[135deg] before:top-[-7px] before:left-[50%] before:translate-x-[-50%] dark:before:border-b-gray-700;
   }
+  .brandBoxColors {
+    @apply after:w-[30%] after:h-full after:left-0  after:content-[''] after:absolute after:bg-gradient-to-r after:from-gray-100 dark:after:from-gray-700;
+    @apply before:w-[30%] before:h-full before:right-0  before:content-[''] before:absolute before:bg-gradient-to-l before:from-gray-100 dark:before:from-gray-700;
+  }
 }
 
 @layer utilities {
