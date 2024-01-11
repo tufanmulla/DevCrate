@@ -23,3 +23,8 @@
     box-shadow: 0 0 180px -40px red;
   }
 }
+
+/* for layerButton Border Bottom  */
+.borderBottom {
+  border-bottom: 3px solid red;
+}
