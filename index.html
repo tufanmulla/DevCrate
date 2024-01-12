@@ -570,14 +570,17 @@
           >
             <div
               id="layerButton"
-              class="flex flex-col justify-center items-center gap-2 cursor-pointer w-28 clickAbleButton"
+              class="flex flex-col justify-center items-center gap-2 cursor-pointer w-28 clickAbleButton borderBottom"
             >
               <img
                 class="w-7"
                 src="./assets/images/sectionThreeImage/build.png"
                 alt="Build"
               />
-              <strong id="layerText" class="font-bold text-[#2A446B] text-lg"
+              <strong
+                id="layerText"
+                style="color: red"
+                class="font-bold text-[#2A446B] text-lg dark:text-gray-200"
                 >Build</strong
               >
             </div>
@@ -590,7 +593,9 @@
                 src="./assets/images/sectionThreeImage/share.png"
                 alt="Share"
               />
-              <strong id="layerText" class="font-bold text-[#2A446B] text-lg"
+              <strong
+                id="layerText"
+                class="font-bold text-[#2A446B] text-lg dark:text-gray-200"
                 >Share</strong
               >
             </div>
@@ -603,46 +608,62 @@
                 src="./assets/images/sectionThreeImage/run.png"
                 alt="Run"
               />
-              <strong id="layerText" class="font-bold text-[#2A446B] text-lg"
+              <strong
+                id="layerText"
+                class="font-bold text-[#2A446B] text-lg dark:text-gray-200"
                 >Run</strong
               >
             </div>
           </div>
           <div
             id="layerParent"
-            class="w-[60%] grid grid-cols-1 justify-items-center items-center relative"
+            class="w-[60%] h-[610px] grid grid-cols-1 justify-items-center items-center relative"
           >
             <div
               id="layer"
-              class="w-[60%] grid gap-10 absolute origin-center duration-300 -top-[50px] pb-24"
+              class="w-[60%] grid gap-10 absolute origin-center duration-300 -top-[40px] pb-24"
             >
-              <h3 class="text-5xl font-semibold text-[#2A446B] text-center">
+              <h3
+                class="text-5xl font-semibold text-[#2A446B] text-center dark:text-gray-200"
+              >
                 Build
               </h3>
               <article class="flex flex-col gap-2">
-                <h4 class="text-[#2A446B] font-bold text-xl text-center">
+                <h4
+                  class="text-[#2A446B] font-bold text-xl text-center dark:text-gray-200"
+                >
                   Create new environments rapidly
                 </h4>
-                <p class="text-[#2A446B] text-center font-light text-">
+                <p
+                  class="text-[#2A446B] text-center font-light dark:text-gray-200"
+                >
                   Build distinctive applications using DevCrate images and
                   orchestrate multiple containers effortlessly with DevCrate
                   Compose.
                 </p>
               </article>
               <article class="flex flex-col gap-2">
-                <h4 class="text-[#2A446B] font-bold text-xl text-center">
+                <h4
+                  class="text-[#2A446B] font-bold text-xl text-center dark:text-gray-200"
+                >
                   Connect seamlessly with your current tools
                 </h4>
-                <p class="text-[#2A446B] text-center font-light text-">
+                <p
+                  class="text-[#2A446B] text-center font-light dark:text-gray-200"
+                >
                   DevCrate seamlessly integrates with a variety of development
                   tools, including VS Code, CircleCI, and GitHub.
                 </p>
               </article>
               <article class="flex flex-col gap-2">
-                <h4 class="text-[#2A446B] font-bold text-xl text-center">
+                <h4
+                  class="text-[#2A446B] font-bold text-xl text-center dark:text-gray-200"
+                >
                   Encapsulate applications in containers to ensure uniformity
                 </h4>
-                <p class="text-[#2A446B] text-center font-light text-">
+                <p
+                  class="text-[#2A446B] text-center font-light dark:text-gray-200"
+                >
                   Ensure consistent deployment across diverse environments,
                   spanning from on-premises Kubernetes to cloud services like
                   AWS ECS, Azure ACI, Google GKE, and beyond.
@@ -651,35 +672,49 @@
             </div>
             <div
               id="layer"
-              class="w-[60%] grid gap-10 absolute -top-[50px] origin-center duration-300 scale-0 pb-24"
+              class="w-[60%] grid gap-10 absolute -top-[40px] origin-center duration-300 scale-0 pb-24"
             >
-              <h3 class="text-5xl font-semibold text-[#2A446B] text-center">
+              <h3
+                class="text-5xl font-semibold text-[#2A446B] text-center dark:text-gray-200"
+              >
                 Share
               </h3>
               <article class="flex flex-col gap-2">
-                <h4 class="text-[#2A446B] font-bold text-xl text-center">
+                <h4
+                  class="text-[#2A446B] font-bold text-xl text-center dark:text-gray-200"
+                >
                   Construct using verified and trustworthy content
                 </h4>
-                <p class="text-[#2A446B] text-center font-light text-">
+                <p
+                  class="text-[#2A446B] text-center font-light dark:text-gray-200"
+                >
                   Explore DevCrate usted Content from verified publishers or
                   DevCrate Official Images by visiting DevCrate Hub.
                 </p>
               </article>
               <article class="flex flex-col gap-2">
-                <h4 class="text-[#2A446B] font-bold text-xl text-center">
+                <h4
+                  class="text-[#2A446B] font-bold text-xl text-center dark:text-gray-200"
+                >
                   Work together with your team
                 </h4>
-                <p class="text-[#2A446B] text-center font-light text-">
+                <p
+                  class="text-[#2A446B] text-center font-light dark:text-gray-200"
+                >
                   Retrieve and share images effortlessly from the Hub,
                   streamlining collaboration within your team, organization, or
                   the wider community.
                 </p>
               </article>
               <article class="flex flex-col gap-2">
-                <h4 class="text-[#2A446B] font-bold text-xl text-center">
+                <h4
+                  class="text-[#2A446B] font-bold text-xl text-center dark:text-gray-200"
+                >
                   Safeguard your workspaces
                 </h4>
-                <p class="text-[#2A446B] text-center font-light text-">
+                <p
+                  class="text-[#2A446B] text-center font-light dark:text-gray-200"
+                >
                   Implement best practices by managing image access, registry
                   access, and utilizing private repositories to enhance
                   workspace security.
@@ -688,34 +723,48 @@
             </div>
             <div
               id="layer"
-              class="w-[60%] grid gap-10 absolute -top-[50px] origin-center duration-300 scale-0 pb-24"
+              class="w-[60%] grid gap-10 absolute -top-[40px] origin-center duration-300 scale-0 pb-24"
             >
-              <h3 class="text-5xl font-semibold text-[#2A446B] text-center">
+              <h3
+                class="text-5xl font-semibold text-[#2A446B] text-center dark:text-gray-200"
+              >
                 Run
               </h3>
               <article class="flex flex-col gap-2">
-                <h4 class="text-[#2A446B] font-bold text-xl text-center">
+                <h4
+                  class="text-[#2A446B] font-bold text-xl text-center dark:text-gray-200"
+                >
                   Ensure uniform application delivery
                 </h4>
-                <p class="text-[#2A446B] text-center font-light text-">
+                <p
+                  class="text-[#2A446B] text-center font-light dark:text-gray-200"
+                >
                   Ship your applications knowing they’ll run the same way on any
                   environment, locally or in the cloud.
                 </p>
               </article>
               <article class="flex flex-col gap-2">
-                <h4 class="text-[#2A446B] font-bold text-xl text-center">
+                <h4
+                  class="text-[#2A446B] font-bold text-xl text-center dark:text-gray-200"
+                >
                   Create with flexibility.
                 </h4>
-                <p class="text-[#2A446B] text-center font-light text-">
+                <p
+                  class="text-[#2A446B] text-center font-light dark:text-gray-200"
+                >
                   Deploy applications in isolated containers with multi-language
                   support, reducing conflict between application dependencies
                 </p>
               </article>
               <article class="flex flex-col gap-2">
-                <h4 class="text-[#2A446B] font-bold text-xl text-center">
+                <h4
+                  class="text-[#2A446B] font-bold text-xl text-center dark:text-gray-200"
+                >
                   Execute deployment effortlessly with a single command.
                 </h4>
-                <p class="text-[#2A446B] text-center font-light text-">
+                <p
+                  class="text-[#2A446B] text-center font-light dark:text-gray-200"
+                >
                   Leverage the DevCrate Compose CLI for accelerated development,
                   launching your applications seamlessly with just one command.
                 </p>
@@ -725,6 +774,56 @@
         </div>
       </section>
       <!-- Section Three Ends Are Here -->
+
+      <!-- Section Four Starts Are Here -->
+      <section
+        class="grid justify-center items-center relative bg-gray-200 dark:bg-gray-600 pb-24"
+      >
+        <svg
+          class="absolute -top-[18.78rem]"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
+          <path
+            class="fill-gray-200 dark:fill-gray-600"
+            fill-opacity="1"
+            d="M0,128L120,160C240,192,480,256,720,234.7C960,213,1200,107,1320,53.3L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+          ></path>
+        </svg>
+
+        <div class="w-[90%] grid grid-cols-2 justify-self-center items-center">
+          <div class="flex flex-col items-start gap-4">
+            <strong
+              class="text-transparent bg-clip-text bg-gradient-to-r from-[#2A446B] to-[#507ec4] text-2xl font-bold tracking-tight dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#507ec4] dark:to-[red]"
+              >Vessel Development
+            </strong>
+            <article class="flex flex-col gap-4">
+              <h2 class="text-black text-5xl font-extrabold dark:text-gray-300">
+                Containers Neophyte Realm?
+              </h2>
+              <p class="text-gray-600 dark:text-gray-300 font-base">
+                We've got you sorted! Dive into the fundamentals with our
+                comprehensive container guide, exploring their definition,
+                advantages over virtual machines, and more to kickstart your
+                journey.
+              </p>
+            </article>
+            <a
+              class="text-xl text-[#2A446B] dark:text-[red] font-semibold hover:text-gray-500 hover:underline  dark:hover:text-gray-400 duration-300"
+              href=""
+              >Check our container guide &#8594;</a
+            >
+          </div>
+          <div class="flex justify-center items-center">
+            <img
+              class="w-96 h-96 rounded-full object-cover"
+              src="./assets/images/sectionFourImage/images.png"
+              alt="Development Image"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Section Four Ends Are Here -->
     </main>
     <!-- Main Ends Are Here -->
 
