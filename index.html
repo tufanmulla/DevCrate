@@ -54,8 +54,8 @@
   <body class="dark">
     <!-- Header Starts Are Here -->
     <header class="bg-gray-200 dark:bg-gray-800">
-      <div class="grid grid-cols-12 justify-center items-center px-7 py-5">
-        <div class="flex col-start-1 col-end-3 justify-start items-center">
+      <div class="grid grid-flow-col items-center px-7 py-5">
+        <div class="flex justify-start items-center">
           <a href="">
             <strong class="text-[#507ec4] text-3xl">&lt;&#47;&gt;</strong>
             <span class="text-[#507ec4] text-3xl">DevCrate</span>
@@ -63,7 +63,7 @@
         </div>
 
         <!-- Navigation Bar Are Starts Here -->
-        <nav id="navigationBar" class="h-full col-start-3 col-end-9">
+        <nav id="navigationBar" class="h-full">
           <ul class="h-full flex gap-10 justify-center items-center text-lg">
             <li
               class="h-full flex gap-2 justify-center items-center group relative font-medium text-base text-gray-600 cursor-pointer dark:text-gray-300"
@@ -241,10 +241,7 @@
         </nav>
         <!-- Navigation Bar Are Ends Here -->
 
-        <div
-          class="col-start-9 col-end-13 flex gap-3 justify-end items-center"
-          id="headerPart3"
-        >
+        <div class="flex gap-3 justify-end items-center" id="headerPart3">
           <form
             onsubmit="event.preventDefault()"
             class="flex justify-center items-center gap-2"
@@ -530,7 +527,7 @@
 
       <!-- Section Three Starts Are Here -->
       <section
-        class="relative grid grid-cols-1 justify-items-center items-center bg-white dark:bg-gray-500"
+        class="relative grid grid-cols-1 justify-items-center items-center bg-gray-50 dark:bg-gray-500"
       >
         <svg
           class="absolute -top-[18.78rem]"
@@ -538,7 +535,7 @@
           viewBox="0 0 1440 320"
         >
           <path
-            class="fill-white dark:fill-gray-500"
+            class="fill-gray-50 dark:fill-gray-500"
             fill-opacity="1"
             d="M0,128L120,160C240,192,480,256,720,234.7C960,213,1200,107,1320,53.3L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
           ></path>
@@ -777,7 +774,7 @@
 
       <!-- Section Four Starts Are Here -->
       <section
-        class="grid justify-center items-center relative bg-gray-200 dark:bg-gray-600 pb-72 z-0"
+        class="grid justify-center items-center relative bg-gray-100 dark:bg-gray-700 pb-72 z-0"
       >
         <svg
           class="absolute -top-[18.78rem]"
@@ -785,7 +782,7 @@
           viewBox="0 0 1440 320"
         >
           <path
-            class="fill-gray-200 dark:fill-gray-600"
+            class="fill-gray-100 dark:fill-gray-700"
             fill-opacity="1"
             d="M0,128L120,160C240,192,480,256,720,234.7C960,213,1200,107,1320,53.3L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
           ></path>
@@ -892,7 +889,7 @@
       <!-- Section Five Ens Are Here-->
 
       <!-- Seciton Six Starts Are Here -->
-      <section class="relative bg-gray-900 pb-24">
+      <section class="relative bg-gray-900 pb-72">
         <svg
           class="absolute -top-[18.78rem] z-0"
           xmlns="http://www.w3.org/2000/svg"
@@ -912,11 +909,13 @@
               class="w-[70%] flex flex-col gap-4 items-center justify-center"
             >
               <h2
-                class="font-extrabold text-gray-50 text-7xl text-center leading-tight dark:text-gray-300"
+                class="font-extrabold text-gray-100 text-7xl text-center leading-tight dark:text-gray-300"
               >
                 Create from code to cloud with reliable collaborators
               </h2>
-              <p class="text-center text-gray-50 text-lg font-medium dark:text-gray-300">
+              <p
+                class="text-center text-gray-100 text-lg font-medium dark:text-gray-300"
+              >
                 Our collaborations guarantee the seamless functionality of your
                 development pipeline network, tailored to your preferred
                 environment, be it local or in the cloud.
@@ -928,82 +927,103 @@
               >
             </article>
           </div>
-          <div>
-            <div>
+          <div
+            class="w-[85%] justify-self-center flex gap-10 justify-items-center items-center"
+          >
+            <div class="flex flex-col gap-4">
               <img
-                src="./assets//images/secitonSixImage/aws.png"
+                class="w-12"
+                src="./assets//images/secitonSixImage/aws.webp"
                 alt="Amazon Web Service"
               />
-              <p>
+              <p
+                class="text-gray-100 font-normal text-pretty text-base dark:text-gray-300"
+              >
                 Streamline the creation of your multi-container applications,
                 spanning from DevCrate CLI to Amazon EKS and Serverless
                 environments.
               </p>
             </div>
-            <div>
+            <div class="flex flex-col gap-4">
               <img
+                class="w-12"
                 src="./assets//images/secitonSixImage/azure.png"
                 alt="Azure"
               />
-              <p>
+              <p
+                class="text-gray-100 font-normal text-pretty text-base dark:text-gray-300"
+              >
                 Effortlessly transition container applications from your local
                 machine to run smoothly in Azure Container Instances.
               </p>
             </div>
-            <div>
+            <div class="flex flex-col gap-4">
               <img
-                src="./assets//images/secitonSixImage/jFrog.png"
+                class="w-12"
+                src="./assets//images/secitonSixImage/jFrog200x200.png"
                 alt="JFrog"
               />
-              <p>
+              <p
+                class="text-gray-100 font-normal text-pretty text-base dark:text-gray-300"
+              >
                 Effortlessly distribute and share Docker images using the JFrog
                 Artifactory image repository, while seamlessly integrating all
                 your development tools.
               </p>
             </div>
           </div>
-          <div>
-            <h3>
+          <div class="flex flex-col justify-center items-center gap-12">
+            <h3 class="text-gray-100 text-3xl font-medium dark:text-gray-300">
               Incorporate seamlessly with your preferred tools and visuals.
             </h3>
-            <div>
+            <div class="grid grid-cols-5 gap-10 justify-center items-center">
               <img
+                class="w-44 h-24 object-fit shadow-inner shadow-red-500 bg-gray-300 rounded-md p-4 dark:bg-gray-400 dark:shadow-inner dark:shadow-white"
                 src="./assets//images/secitonSixImage/gitlab.png"
                 alt="GitLab"
               />
               <img
+                class="w-44 h-24 object-fit shadow-inner shadow-red-500 bg-gray-300 rounded-md p-4 dark:bg-gray-400 dark:shadow-inner dark:shadow-white"
                 src="./assets//images/secitonSixImage/mongodb.png"
                 alt="MongoDB"
               />
               <img
+                class="w-44 h-24 object-fit shadow-inner shadow-red-500 bg-gray-300 rounded-md p-4 dark:bg-gray-400 dark:shadow-inner dark:shadow-white"
                 src="./assets//images/secitonSixImage/circleci.png"
                 alt="CircleCI"
               />
               <img
+                class="w-44 h-24 object-fit shadow-inner shadow-red-500 bg-gray-300 rounded-md p-4 dark:bg-gray-400 dark:shadow-inner dark:shadow-white"
                 src="./assets//images/secitonSixImage/github.png"
                 alt="GitHub"
               />
               <img
+                class="w-44 h-24 object-fit shadow-inner shadow-red-500 bg-gray-300 rounded-md p-4 dark:bg-gray-400 dark:shadow-inner dark:shadow-white"
                 src="./assets//images/secitonSixImage/redis.png"
                 alt="Redis"
               />
               <img
+                class="w-44 h-24 object-fit shadow-inner shadow-red-500 bg-gray-300 rounded-md p-4 dark:bg-gray-400 dark:shadow-inner dark:shadow-white"
                 src="./assets//images/secitonSixImage/nginx.png"
                 alt="Ngnix"
               />
               <img
-                src="./assets//images/secitonSixImage/jFrog.png"
+                class="w-44 h-24 object-fit shadow-inner shadow-red-500 bg-gray-300 rounded-md p-4 dark:bg-gray-400 dark:shadow-inner dark:shadow-white"
+                src="./assets//images/secitonSixImage/jFrog400x140.png"
                 alt="JFrog"
               />
               <img
+                class="w-44 h-24 object-fit shadow-inner shadow-red-500 bg-gray-300 rounded-md p-4 dark:bg-gray-400 dark:shadow-inner dark:shadow-white"
                 src="./assets//images/secitonSixImage/kubernetes.png"
                 alt="Kubernetes"
               />
               <img
+                class="w-44 h-24 object-fit shadow-inner shadow-red-500 bg-gray-300 rounded-md p-4 dark:bg-gray-400 dark:shadow-inner dark:shadow-white"
                 src="./assets//images/secitonSixImage/elastic.png"
                 alt="Elastic"
               />
               <img
+                class="w-44 h-24 object-fit shadow-inner shadow-red-500 bg-gray-300 rounded-md p-4 dark:bg-gray-400 dark:shadow-inner dark:shadow-white"
                 src="./assets//images/secitonSixImage/bitbucket.png"
                 alt="Atlassian BitBucket"
               />
@@ -1012,6 +1032,22 @@
         </div>
       </section>
       <!-- Seciton Six Ends Are Here -->
+
+      <!-- Section Seven Starts Are Here -->
+      <section class="relative bg-gray-50 dark:bg-gray-500 pb-24">
+        <svg
+          class="absolute -top-[18.78rem] z-0"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
+          <path
+            class="fill-gray-50 dark:fill-gray-500"
+            fill-opacity="1"
+            d="M0,128L120,160C240,192,480,256,720,234.7C960,213,1200,107,1320,53.3L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+          ></path>
+        </svg>
+      </section>
+      <!-- Section Seven Ends Are Here -->
     </main>
     <!-- Main Ends Are Here -->
 

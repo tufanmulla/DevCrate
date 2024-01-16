@@ -10,8 +10,6 @@ searchIcon.addEventListener("click", (event) => {
     search.classList.remove("hidden");
     search.focus();
     navigationBar.classList.add("hidden");
-    headerPart3.classList.remove("col-start-9");
-    headerPart3.classList.add("col-start-6");
   }
 });
 
@@ -24,8 +22,6 @@ document.addEventListener("click", (event) => {
   ) {
     search.classList.add("hidden");
     navigationBar.classList.remove("hidden");
-    headerPart3.classList.remove("col-start-6");
-    headerPart3.classList.add("col-start-9");
   }
 });
 
@@ -37,7 +33,7 @@ let clickAbleButton = document.querySelectorAll(".clickAbleButton");
 
 // When user navigating between Build Run And Share then hide and show the layer and toggling the text color of layerButton
 layerButtons.forEach((button, buttonIndex) => {
-  button.addEventListener("click", () => {
+  button.addEventListener("click", (event) => {
     // hide and show the layerButton of  borderBottom
     if (!button.classList.contains("borderBottom")) {
       clickAbleButton.forEach((buttons) => {
