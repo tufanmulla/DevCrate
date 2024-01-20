@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "scripts": {
-    "dev": "tailwindcss -i ./src/tailwind.css -o ./output/tailwind.css -w"
+    "dev": "tailwindcss -i ./src/tailwind.css -o ./output/tailwind.css -w",
+    "production-build": "cross-env NODE_ENV=production  tailwindcss -i ./src/tailwind.css -o ./output/tailwind.min.css --minify"
   },
   "keywords": [],
   "author": "Tufan Mulla",
