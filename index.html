@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,6 +47,7 @@
 
     <!-- Link with CSS Are Starts -->
     <link rel="stylesheet" href="./output/tailwind.min.css" />
+    <link rel="stylesheet" href="./output/tailwind.css" />
     <!-- Link with CSS Are Ends -->
 
     <title>DevCrate</title>
@@ -1339,8 +1340,21 @@
           <button class="cookies-button">Cookies Settings</button>
         </div>
       </div>
-      <div></div>
+      <button
+        class="fixed z-[99px] right-[30px] bottom-[20px] outline-none border-none"
+        style="display: none"
+        onclick="topFunction()"
+        title="Go to top"
+        id="backToTopButton"
+      >
+        <img
+          class="w-10"
+          src="./assets/images/footerImage/backToTopButton.png"
+          alt="Back to Top Button"
+        />
+      </button>
     </footer>
+
     <!-- Footer Ends Are Here-->
 
     <!-- Link Js Are Starts -->
