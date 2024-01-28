@@ -1,5 +1,4 @@
 // define a variable
-
 let menuBar = document.querySelector("#menuBar");
 let navigationBar = document.querySelector("#navigationBar");
 let headerPart3 = document.querySelector("#headerPart3");
