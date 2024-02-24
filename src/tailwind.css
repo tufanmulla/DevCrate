@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @layer components {
-  .category-box-direction {
-    @apply before:absolute before:content-[''] before:border-r-[28px] before:border-b-[28px] before:border-r-[transparent] before:border-b-gray-100 before:rotate-[135deg] before:top-[-7px] before:left-[50%] before:translate-x-[-50%] dark:before:border-b-gray-700;
-  }
   .brandBoxColors {
     @apply after:w-[30%] after:h-full after:left-0  after:content-[''] after:absolute after:bg-gradient-to-r after:from-gray-100 dark:after:from-gray-700 before:w-[30%] before:h-full before:right-0  before:content-[''] before:absolute before:bg-gradient-to-l before:from-gray-100 dark:before:from-gray-700;
+  }
+  .collaboratorBrandImage {
+    @apply w-32 h-20 shadow-inner shadow-red-500 bg-gray-300 rounded-md p-4 dark:bg-gray-400 dark:shadow-inner dark:shadow-white;
   }
   .footer-li-styles {
     @apply font-normal text-base text-gray-500 hover:underline hover:underline-offset-4 hover:text-gray-900 dark:text-gray-200 dark:hover:text-gray-400 duration-300 cursor-pointer;
@@ -24,9 +24,6 @@
 }
 
 @layer utilities {
-  .products-category-box-width {
-    width: 37.25rem;
-  }
   .scoutBoxShadow {
     box-shadow: 0 0 120px 15px #507ec4;
   }

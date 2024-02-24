@@ -5,25 +5,6 @@ let headerPart3 = document.querySelector("#headerPart3");
 let search = document.querySelector("#search");
 let searchIcon = document.querySelector("#searchIcon");
 
-// when click on the #menuBar id then toggling the #navigationBar
-menuBar.addEventListener("click", (event) => {
-  if (navigationBar.classList.contains("scale-y-0")) {
-    navigationBar.classList.remove("scale-y-0");
-  } else {
-    navigationBar.classList.add("scale-y-0");
-  }
-});
-//when click on the (document) then add class scale-y-0 of the #navigationBar
-document.addEventListener("click", (menuBarEvent) => {
-  if (
-    !menuBarEvent.target.closest("#menuBar") &&
-    !menuBarEvent.target.closest("#navigationBar") &&
-    !navigationBar.classList.contains("scale-y-0")
-  ) {
-    navigationBar.classList.add("scale-y-0");
-  }
-});
-
 //when click #hierarchy-li then show the hieerarchy-Li-Div
 let hierarchyLi = document.querySelectorAll("#hierarchy-li");
 let hierarchyLiDiv = document.querySelectorAll("#hierarchy-li-div");
@@ -50,26 +31,42 @@ hierarchyLi.forEach((li, liIndex) => {
 });
 
 // When User Click On The #searchIcon ID Then The #navigationBar Hide And #search Bar Shown
-// searchIcon.addEventListener("click", (event) => {
+searchIcon.addEventListener("click", (event) => {
+  console.log("cliked");
+  if (search.classList.contains("hidden")) {
+    search.classList.remove("hidden");
+    search.focus();
+  }
+});
 
-//   if (search.classList.contains("hidden")) {
-//     search.classList.remove("hidden");
-//     search.focus();
-//     navigationBar.classList.add("hidden");
-//   }
-// });
+document.addEventListener("click", (event) => {
+  if (
+    !event.target.closest("#searhIcon") &&
+    !event.target.closest("#search") &&
+    !search.classList.contains("hidden")
+  ) {
+    search.classList.add("hidden");
+  }
+});
 
-// document.addEventListener("click", (event) => {
-//   if (
-//     !event.target.closest("#searhIcon") &&
-//     !event.target.closest("#search") &&
-//     navigationBar.classList.contains("hidden") &&
-//     !search.classList.contains("hidden")
-//   ) {
-//     search.classList.add("hidden");
-//     navigationBar.classList.remove("hidden");
-//   }
-// });
+// when click on the #menuBar id then toggling the #navigationBar
+menuBar.addEventListener("click", (event) => {
+  if (navigationBar.classList.contains("scale-y-0")) {
+    navigationBar.classList.remove("scale-y-0");
+  } else {
+    navigationBar.classList.add("scale-y-0");
+  }
+});
+//when click on the (document) then add class scale-y-0 of the #navigationBar
+document.addEventListener("click", (menuBarEvent) => {
+  if (
+    !menuBarEvent.target.closest("#menuBar") &&
+    !menuBarEvent.target.closest("#navigationBar") &&
+    !navigationBar.classList.contains("scale-y-0")
+  ) {
+    navigationBar.classList.add("scale-y-0");
+  }
+});
 
 // Section Three JavaScript
 let layers = document.querySelectorAll("#layer");
