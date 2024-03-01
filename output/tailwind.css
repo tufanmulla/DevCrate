@@ -2064,6 +2064,10 @@ video {
     width: 100%;
   }
 
+  .\32xl\:w-\[97\%\] {
+    width: 97%;
+  }
+
   .\32xl\:flex-row {
     flex-direction: row;
   }
