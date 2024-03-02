@@ -25,35 +25,35 @@ Visit [Devcrate](https://devcrate.vercel.app) to see this project live.
 
 To explore Devcrate's projects and gain practical experience in using Tailwind CSS, follow these steps:
 
-1.  Fork the Devcrate repository by clicking the "Fork" button on GitHub.
+1. Fork the Devcrate repository by clicking the "Fork" button on GitHub.
 
-2.  Clone your forked repository to your local machine:
+2. Clone your forked repository to your local machine:
 
-    ```markdown
-    git clone <your-forked-repository-url>
-    ```
+   ```markdown
+   git clone <your-forked-repository-url>
+   ```
 
-3.  Navigate to the project directory:
+3. Navigate to the project directory:
 
-    ```markdown
-    cd devcrate
-    ```
+   ```markdown
+   cd devcrate
+   ```
 
-4.  Install dependencies:
+4. Install dependencies:
 
-    ```markdown
-    npm install
-    ```
+   ```markdown
+   npm install
+   ```
 
-5.  Open the project in your preferred code editor.
+5. Open the project in your preferred code editor.
 
-6.  Explore the `index.html` file and associated CSS files to understand the structure and styling of the project.
+6. Explore the `index.html` file and associated CSS files to understand the structure and styling of the project.
 
-7.  Experiment with customizations by modifying the existing code snippets or adding new elements.
+7. Experiment with customizations by modifying the existing code snippets or adding new elements.
 
-8.  Use the provided instructions and comments within the code to guide your learning process.
+8. Use the provided instructions and comments within the code to guide your learning process.
 
-9.  Preview your changes in a web browser to see the impact on the design and layout.
+9. Preview your changes in a web browser to see the impact on the design and layout.
 
 10. To run the project in development mode, use the following command:
 
