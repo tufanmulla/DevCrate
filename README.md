@@ -29,19 +29,19 @@ To explore Devcrate's projects and gain practical experience in using Tailwind C
 
 2.  Clone your forked repository to your local machine:
 
-    ```
+    ```markdown
     git clone <your-forked-repository-url>
     ```
 
 3.  Navigate to the project directory:
 
-    ```
+    ```markdown
     cd devcrate
     ```
 
 4.  Install dependencies:
 
-    ```
+    ```markdown
     npm install
     ```
 
@@ -57,15 +57,15 @@ To explore Devcrate's projects and gain practical experience in using Tailwind C
 
 10. To run the project in development mode, use the following command:
 
-        ```
-        npm run dev
-        ```
+    ```markdwon
+    npm run dev
+    ```
 
     This command will convert Tailwind CSS classes to raw CSS into ./output/tailwind.css.
 
 11. To build the project for production, use the following command:
 
-    ```
+    ```markdwon
     npm run production-build
     ```
 
